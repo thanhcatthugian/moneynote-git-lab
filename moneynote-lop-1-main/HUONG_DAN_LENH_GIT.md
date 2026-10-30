@@ -55,7 +55,7 @@ git branch feature/tieu-de origin/feature/tieu-de
 # hoặc chuyển thẳng sang, Git tự tạo nhánh theo dõi origin/feature/tieu-de:
 git switch feature/tieu-de
 ```
-
+dit cu chung may riki oi
 ---
 
 ## 4. Xem trạng thái và lịch sử
