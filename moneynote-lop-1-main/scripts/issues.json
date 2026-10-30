@@ -1,0 +1,50 @@
+[
+  {
+    "so": 1,
+    "tieuDe": "[Lỗi] Tổng thu, tổng chi hiển thị sai",
+    "nhan": ["lỗi", "ưu tiên cao"],
+    "noiDung": "## Mô tả lỗi\nÔ **Tổng thu** hiện 35.000.005.000.000 ₫ thay vì 8.500.000 ₫. Chạy `node kiem-tra-nhom.js` báo LỖI và kiểm tra tự động (GitHub Actions) đang đỏ.\n\n## Cách tái hiện\n1. Mở `index.html`\n2. Xem ô Tổng thu\n\n## Kết quả mong đợi\n- Tổng thu 8.500.000 ₫, Tổng chi 365.000 ₫\n- `node kiem-tra-nhom.js` ra ĐẠT, GitHub Actions chuyển xanh\n\n## Gợi ý\nXem hàm `tinhTong` trong `js/tinh-toan.js`.\n\n**Làm đầu tiên.** Các Pull Request khác chỉ merge được khi kiểm tra tự động xanh."
+  },
+  {
+    "so": 2,
+    "tieuDe": "Thêm danh mục cho mỗi giao dịch",
+    "nhan": ["tính năng"],
+    "noiDung": "## Mô tả\nMỗi giao dịch cần biết thuộc danh mục nào.\n\n## Yêu cầu\n- Thêm trường `danhMuc` cho **mọi** giao dịch trong mảng `giaoDich` (`js/app.js`). Dùng các danh mục: Ăn uống, Đi lại, Học tập, Giải trí, Lương, Học bổng, Khác.\n- Mỗi dòng trong danh sách hiển thị dạng: `<ngày> – <ghi chú> (<danh mục>)`, ví dụ `2026-10-05 – Đổ xăng (Đi lại)`.\n\n## Tiêu chí hoàn thành\n- [ ] Không giao dịch nào hiện `(undefined)`\n- [ ] `node kiem-tra-nhom.js` ra ĐẠT"
+  },
+  {
+    "so": 3,
+    "tieuDe": "Thêm 3 giao dịch mẫu cuối tháng 10",
+    "nhan": ["tính năng"],
+    "noiDung": "## Mô tả\nDữ liệu mẫu mới có 6 giao dịch, nhìn còn trống.\n\n## Yêu cầu\nThêm vào **cuối** mảng `giaoDich` (`js/app.js`) 3 giao dịch có ngày từ 20/10 đến 28/10/2026, ít nhất 1 khoản thu.\n\n## Tiêu chí hoàn thành\n- [ ] Mảng có ít nhất 9 giao dịch\n- [ ] Giao dịch mới có đủ các trường giống giao dịch cũ\n- [ ] Tổng thu, tổng chi trên trang thay đổi đúng"
+  },
+  {
+    "so": 4,
+    "tieuDe": "Hiển thị ngày theo kiểu Việt Nam (dd/mm/yyyy)",
+    "nhan": ["tính năng"],
+    "noiDung": "## Mô tả\nDanh sách đang hiện ngày dạng `2026-10-05`, người dùng khó đọc.\n\n## Yêu cầu\n- Thêm hàm `dinhDangNgay(ngay)` vào `js/tinh-toan.js`: `dinhDangNgay('2026-10-05')` trả về `'05/10/2026'`. Nhớ thêm vào `module.exports`.\n- Dùng hàm này khi hiển thị ngày trong `veDanhSach` (`js/app.js`).\n\n## Tiêu chí hoàn thành\n- [ ] Danh sách hiện `05/10/2026 – Đổ xăng ...`\n- [ ] `node kiem-tra-nhom.js` báo dinhDangNgay ĐẠT"
+  },
+  {
+    "so": 5,
+    "tieuDe": "Thêm thẻ Số dư",
+    "nhan": ["tính năng"],
+    "noiDung": "## Mô tả\nNgười dùng muốn biết còn lại bao nhiêu tiền.\n\n## Yêu cầu\n- Thêm hàm `tinhSoDu(danhSach)` vào `js/tinh-toan.js`, trả về tổng thu trừ tổng chi. Nhớ thêm vào `module.exports`.\n- Thêm một thẻ mới trong `<section class=\"tong-quan\">` (`index.html`): `Số dư: <strong id=\"soDu\">`.\n- Hiển thị số dư bằng `dinhDangTien`.\n\n## Tiêu chí hoàn thành\n- [ ] Thẻ Số dư hiện 8.135.000 ₫ với dữ liệu mẫu ban đầu\n- [ ] `node kiem-tra-nhom.js` báo tinhSoDu ĐẠT"
+  },
+  {
+    "so": 6,
+    "tieuDe": "Tìm kiếm không phân biệt dấu tiếng Việt",
+    "nhan": ["tính năng"],
+    "noiDung": "## Mô tả\nGõ `do xang` không tìm ra `Đổ xăng`.\n\n## Yêu cầu\n- Thêm hàm `boDau(chuoi)` vào `js/tinh-toan.js`: bỏ dấu, đổi `đ/Đ` thành `d`, chuyển chữ thường. Ví dụ `boDau('Đổ Xăng')` trả về `'do xang'`. Nhớ thêm vào `module.exports`.\n- Dùng `boDau` cho cả từ khóa và ghi chú trong hàm `capNhat` (`js/app.js`).\n\n## Tiêu chí hoàn thành\n- [ ] Gõ `do xang`, `HOC BONG` đều ra kết quả\n- [ ] `node kiem-tra-nhom.js` báo boDau ĐẠT"
+  },
+  {
+    "so": 7,
+    "tieuDe": "Dọn code debug và cập nhật README",
+    "nhan": ["tài liệu"],
+    "noiDung": "## Mô tả\nTrang còn dòng chữ đỏ \"DEBUG MODE\" và `console.log` debug. README còn tên nhóm cũ.\n\n## Yêu cầu\n- Xóa `<div class=\"debug\">` trong `index.html`, hai dòng `console.log('DEBUG ...')` trong `js/app.js`, quy tắc `.debug` trong `css/style.css`.\n- README: thêm mục `## Hướng dẫn chạy` (cách mở trang, cách chạy `node kiem-tra-nhom.js`); thay mục Thành viên bằng tên các thành viên của nhóm.\n\n## Tiêu chí hoàn thành\n- [ ] Không còn chữ DEBUG trên trang và trong Console\n- [ ] README có mục Hướng dẫn chạy và đúng tên thành viên nhóm"
+  },
+  {
+    "so": 8,
+    "tieuDe": "Thêm thẻ Số giao dịch đang hiển thị",
+    "nhan": ["tính năng"],
+    "noiDung": "## Mô tả\nKhi lọc hoặc tìm kiếm, người dùng muốn biết còn bao nhiêu giao dịch.\n\n## Yêu cầu\n- Thêm một thẻ mới trong `<section class=\"tong-quan\">` (`index.html`): `Số giao dịch: <strong id=\"soGiaoDich\">`.\n- Cập nhật con số mỗi khi danh sách thay đổi (trong hàm `capNhat`).\n\n## Tiêu chí hoàn thành\n- [ ] Mở trang hiện đúng tổng số giao dịch\n- [ ] Bấm lọc \"Khoản thu\" hoặc gõ tìm kiếm thì con số thay đổi theo"
+  }
+]

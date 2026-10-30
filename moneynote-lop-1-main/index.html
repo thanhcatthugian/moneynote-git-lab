@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoneyNote Lite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Sổ chi tiêu</h1>
+  </header>
+
+  <main>
+    <section class="tong-quan">
+      <div class="the">Tổng thu: <strong id="tongThu">0</strong></div>
+      <div class="the">Tổng chi: <strong id="tongChi">0</strong></div>
+    </section>
+
+    <div class="bo-loc">
+      <button type="button" data-loc="tat-ca" class="dang-chon">Tất cả</button>
+      <button type="button" data-loc="thu">Khoản thu</button>
+      <button type="button" data-loc="chi">Khoản chi</button>
+    </div>
+
+    <input type="search" id="oTimKiem" placeholder="Tìm theo ghi chú...">
+
+    <ul id="danhSach"></ul>
+  </main>
+
+  <footer>
+    <p>MoneyNote Lite – Bài thực hành Git</p>
+  </footer>
+
+  <div class="debug">DEBUG MODE – nhớ xóa trước khi nộp</div>
+
+  <script src="js/tinh-toan.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+:root {
+  --primary: #1D4ED8;
+  --thu: #0E7A55;
+  --chi: #B42318;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 24px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #F4F6FA;
+  color: #111827;
+}
+
+h1 { color: var(--primary); }
+
+.tong-quan { display: flex; gap: 12px; }
+.the { flex: 1; background: #fff; border-radius: 12px; padding: 16px; }
+
+#danhSach { list-style: none; padding: 0; }
+#danhSach li { display: flex; justify-content: space-between; background: #fff; margin-bottom: 8px; padding: 12px; border-radius: 8px; }
+.thu { color: var(--thu); }
+.chi { color: var(--chi); }
+
+.bo-loc { display: flex; gap: 8px; margin: 16px 0; }
+.bo-loc button { padding: 8px 14px; border: 1px solid #ccc; border-radius: 8px; background: #fff; cursor: pointer; }
+.bo-loc button.dang-chon { background: var(--primary); color: #fff; border-color: var(--primary); }
+#oTimKiem { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 12px; }
+
+footer { text-align: center; color: #6B7280; font-size: 13px; padding: 24px 0; }
+
+.debug { position: fixed; top: 0; right: 0; background: red; color: #fff; padding: 4px 8px; }

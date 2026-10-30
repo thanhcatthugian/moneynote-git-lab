@@ -1,0 +1,10 @@
+# Thư viện cài bằng npm
+node_modules/
+
+# File bí mật, không bao giờ đưa lên Git
+.env
+
+# File log và file rác của hệ điều hành
+*.log
+.DS_Store
+Thumbs.db
