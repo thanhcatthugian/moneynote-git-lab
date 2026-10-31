@@ -19,3 +19,13 @@ Do feature/tieu-de chứa các dòng `<<<<<<<`, `=======`, `>>>>>>>`
 ❓ **Câu 7.** Vì sao dùng `git revert` chứ không dùng `git reset` để gỡ commit đã có trên nhánh chung?
 git revert vẫn giữ nguyên lịch sử sai và thêm mới một commit mới sửa
 git reset xóa lịch sử sai đưa về trạng thái ban đầu 
+❓ **Câu 8.** `reset --soft`, `reset --mixed` (mặc định) và `reset --hard` khác nhau thế nào?
+Với soft thì code vẫn sẽ nằm trong repo như khi sử dụng git add .
+Với mixed thì reverse về trạng thái trước khi dùng git add .
+VỚi hard thì đưa về trạng thái ban đầu bỏ cả nội dung nhập trước git add 
+❓ **Câu 10.** Nếu dùng `git merge hotfix/sua-loi-cong` thay cho `cherry-pick` thì chuyện gì xảy ra?
+Nếu dùng merge git sẽ không cho gộp 
+❓ **Câu 11.** Sau rebase, mã commit "Thêm hàm xuất CSV" có giống mã cũ không? Vì sao không nên rebase một nhánh mà bạn khác đã kéo về máy?
+Chắc là sẽ không giống mã cũ, do không giống mã cũ nên khi nhánh đã được kéo về kia sẽ có sự khác biệt 
+❓ **Câu 12.** `git fetch` và `git pull` khác nhau thế nào?
+fetch: tải code về mà không gộp vào nhánh đang làm, còn pull thì ngược lại, có gộp 
