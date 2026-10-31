@@ -29,7 +29,7 @@ git switch -c issue-5-the-so-du
 ```bash
 git fetch origin
 git merge origin/main
-node kiem-tra-nhom.js
+node kiem-tra- nhom.js
 ```
 
 - PR chỉ được merge khi:

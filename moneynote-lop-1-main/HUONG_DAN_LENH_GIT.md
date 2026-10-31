@@ -17,7 +17,7 @@ Quy ước trong tài liệu:
  (file em đang sửa)               (sẽ vào commit tới)                 (các commit đã lưu)
         ▲                                │                                   │
         └────── git restore <file> ──────┘                                   │
-        └──────────────────── git switch / git reset --hard ─────────────────┘
+        └────── ────────────── git switch / git reset --hard ─────────────────┘
 ```
 
 Thêm một vùng nữa khi làm với GitHub: **remote** (`origin`), nơi `git push` gửi lên và `git fetch` / `git pull` lấy về.

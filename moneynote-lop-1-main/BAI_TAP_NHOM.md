@@ -18,7 +18,7 @@
 
 ## Bước 1. Phân công
 
-Nhóm bầu một **nhóm trưởng** (A). Chia Issue **đúng theo bảng** dưới: một số cặp Issue cố ý sửa cùng một chỗ trong code, nên phải do hai người khác nhau làm thì mới có xung đột thật để thực hành.
+Nhóm bầu một **nhóm  trưởng** (A). Chia Issue **đúng theo bảng** dưới: một số cặp Issue cố ý sửa cùng một chỗ trong code, nên phải do hai người khác nhau làm thì mới có xung đột thật để thực hành.
 
 **Nhóm 4 người**
 

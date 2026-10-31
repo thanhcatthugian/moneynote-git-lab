@@ -56,3 +56,6 @@ capNhat();
 
 console.log('DEBUG giaoDich =', giaoDich);
 console.log('DEBUG tong thu =', tinhTong(giaoDich, 'thu'));
+
+
+// c

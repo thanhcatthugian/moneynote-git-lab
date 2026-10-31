@@ -18,3 +18,4 @@ function dinhDangTien(soTien) {
 if (typeof module !== 'undefined') {
   module.exports = { tinhTong, locTheoLoai, dinhDangTien };
 }
+// b

@@ -2,7 +2,7 @@
 // GitHub Actions cũng chạy file này trên mỗi Pull Request.
 //
 // - Hàm tinhTong phải đúng.
-// - Không được còn dấu xung đột (<<<<<<< ======= >>>>>>>) trong code.
+// - Không được còn dấu xung đột (<<<<<<< ==== === >>>>>>>) trong code.
 // - Hàm của Issue nào đã có thì phải chạy đúng; chưa có thì chỉ nhắc "chưa làm".
 'use strict';
 const fs = require('fs');

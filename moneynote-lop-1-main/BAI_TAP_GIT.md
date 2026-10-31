@@ -144,7 +144,7 @@ Cả nhóm thống nhất chọn tiêu đề **"MoneyNote – Quản lý chi ti�
 **Kết quả mong đợi:** `git log --oneline --graph` thấy 2 merge commit. Trang web có tiêu đề "MoneyNote – Quản lý chi tiêu" **và** vẫn giữ màu xanh ngọc. Không còn dấu xung đột nào (kiểm tra bằng `git grep -n "<<<<<<<" -- index.html`, không có kết quả là đúng).
 
 ❓ **Câu 5.** Vì sao 3.1 là fast-forward còn 3.2 lại tạo merge commit?
-❓ **Câu 6.** Vì sao gộp `feature/giao-dien-moi` không xung đột, còn `feature/tieu-de` thì có?
+ **Câu 6.** Vì sao gộp `feature/giao-dien-moi` không xung đột, còn `feature/tieu-de` thì có?
 
 ---
 
