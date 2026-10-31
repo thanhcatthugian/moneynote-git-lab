@@ -9,3 +9,13 @@ Nguyễn Minh tại commit thêm hàm tính tổng thu, tổng chi
 git diff để hiển thị những thay đổi chưa chạy git add 
 git diff --staged Hiển thị những thay đổi sau khi chạy git add 
 file .env thường chứa những cấu hình kỹ thuật nên hạn chế đưa lên nhằm vấn đề bảo mật 
+
+❓ **Câu 5.** Vì sao 3.1 là fast-forward còn 3.2 lại tạo merge commit?
+    Fast forward xảy ra khi nhánh main chưa có commit kể từ khi rẽ nhánh
+    Merge commit xảy ra khi nhánh phân mới đã được commit 
+❓ **Câu 6.** Vì sao gộp `feature/giao-dien-moi` không xung đột, còn `feature/tieu-de` thì có?
+Do feature/tieu-de chứa các dòng `<<<<<<<`, `=======`, `>>>>>>>`
+
+❓ **Câu 7.** Vì sao dùng `git revert` chứ không dùng `git reset` để gỡ commit đã có trên nhánh chung?
+git revert vẫn giữ nguyên lịch sử sai và thêm mới một commit mới sửa
+git reset xóa lịch sử sai đưa về trạng thái ban đầu 
